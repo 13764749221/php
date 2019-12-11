@@ -12,10 +12,6 @@ export default {
   redirect: { name: 'yun-shortmessage-index' },
   component: layoutHeaderAside,
   children: (pre => [
-    { path: 'customer', name: `${pre}customer`, component: _import('yun/shortmessage/customer/customer.vue'), meta: { ...meta, title: '客服管理' } },
-    { path: 'examination', name: `${pre}examination`, component: _import('yun/shortmessage/examination/examination.vue'), meta: { ...meta, title: '考试管理' } },
-    { path: 'questions', name: `${pre}questions`, component: _import('yun/shortmessage/questions/questions.vue'), meta: { ...meta, title: '考题管理' } },
-    { path: 'material', name: `${pre}material`, component: _import('yun/shortmessage/material/material.vue'), meta: { ...meta, title: '资料管理' } },
-    { path: 'curriculum', name: `${pre}curriculum`, component: _import('yun/shortmessage/curriculum/curriculum.vue'), meta: { ...meta, title: '课程类型' } }
+    { path: 'customer', name: `${pre}customer`, component: _import('yun/shortmessage/customer/customer.vue'), meta: { ...meta, title: '二维码管理' } }
   ])('yun-shortmessage-')
 }

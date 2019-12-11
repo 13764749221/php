@@ -1,6 +1,6 @@
 <template>
   <d2-container class="page">
-    <div class="title">欢迎使用医美管理后台</div>
+    <div class="title">欢迎使用项目管理后台</div>
     <!-- <d2-page-cover>
       <d2-icon-svg class="logo" name="d2-admin"/>
       <template slot="footer">
