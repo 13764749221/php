@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/views/demo/d2-crud/demo22/doc.md"],"names":["module","exports"],"mappings":"mGAAAA,EAAOC,QAAU","file":"js/chunk-2d0d7468.9e082703.js","sourcesContent":["module.exports = \"通过给 `D2 Crud` 传入 `add-rules` 或 `edit-rules` 可开启新增/修改表单校验，校验规则参见：[async-validator](https://github.com/yiminghe/async-validator)。代码如下：\\r\\n\""],"sourceRoot":""}

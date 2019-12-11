@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/views/demo/d2-crud/demo6/doc.md"],"names":["module","exports"],"mappings":"iGAAAA,EAAOC,QAAU","file":"js/chunk-2d22c114.8d8175d4.js","sourcesContent":["module.exports = \"固定列需要在 `columns` 对象数组中给需要固定的列传入 `fixed` 属性，它接受 `Boolean` 值或者 `left` `right` ，表示左边固定还是右边固定。代码如下：\\r\\n\""],"sourceRoot":""}

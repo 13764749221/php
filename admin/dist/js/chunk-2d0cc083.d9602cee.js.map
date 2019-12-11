@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/views/demo/d2-crud/demo27/doc.md"],"names":["module","exports"],"mappings":"mGAAAA,EAAOC,QAAU","file":"js/chunk-2d0cc083.d9602cee.js","sourcesContent":["module.exports = \"在 `D2 Crud` 组件中传入 `loading` ，即可控制表格加载状态，`loading` 的可选值为 `true` 和 `false`。代码如下：\\r\\n\""],"sourceRoot":""}
