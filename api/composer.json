@@ -24,7 +24,8 @@
     "autoload": {
         "files": [
             "src/app/functions.php",
-            "helpers/Qiniu.php"
+            "helpers/Qiniu.php",
+            "helpers/phpqrcode.php"
             ],
         "psr-4": {
             "App\\": "src/app"
