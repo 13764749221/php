@@ -3,7 +3,6 @@ namespace App\Api;
 
 use PhalApi\Api;
 
-header('Access-Control-Allow-Origin:*');
 /**
  * 用户模块接口服务
  */
