@@ -14,10 +14,10 @@ if($_SERVER['HTTP_HOST']!='localhost:7001'){
         'servers' => array(
             'db_master' => array(                       //服务器标记
                 'type'      => 'mysql',                 //数据库类型，暂时只支持：mysql, sqlserver
-                'host'      => 'rm-eosicrm.mysql.rds.aliyuncs.com',            //数据库域名
-                'name'      => 'eosi_kwt',               //数据库名字
-                'user'      => 'kwd_usr',                  //数据库用户名
-                'password'  => '191225ak876T4@eosi',	                    //数据库密码
+                'host'      => 'rm-2ze85s44b59wp7672qo.mysql.rds.aliyuncs.com',            //数据库域名
+                'name'      => 'web_h51',               //数据库名字
+                'user'      => 'root',                  //数据库用户名
+                'password'  => '8236455Wei',	                    //数据库密码
                 'port'      => 3306,                    //数据库端口
                 'charset'   => 'UTF8',                  //数据库字符集
             ),
