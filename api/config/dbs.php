@@ -6,7 +6,7 @@
  * @link        http://www.phalapi.net/
  * @author: dogstar <chanzonghuang@gmail.com> 2015-02-09
  */
-if($_SERVER['HTTP_HOST']!='localhost'){
+if($_SERVER['HTTP_HOST']!='localhost:7001'){
     return array(
         /**
          * DB数据库服务器集群
