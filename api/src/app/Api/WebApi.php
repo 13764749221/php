@@ -9,11 +9,12 @@ header('Access-Control-Allow-Origin:*');
 class WebApi extends Api {
 
  	public function __construct(){
-		$this->QuestionModel = new \App\Model\Web\Question();
+        $this->QuestionModel = new \App\Model\Web\Question();
+        $this->AddressModel = new \App\Model\Web\Address();
     }
 
     /**
-     * 获取客户列表
+     * 保存问卷数据
      * @return [type] [description]
      */
     public function SaveQuestion(){
@@ -22,6 +23,22 @@ class WebApi extends Api {
 			unset($params['s']);
 			$params['created_at'] = date("Y-m-d H:i:s");
 	        $res = $this->QuestionModel->insert($params);
+	        return array('res' => $res, 'msg' => "");
+        } catch (\Exception $e) {
+        	return array('res' => $e->getCode() , 'msg' => $e->getMessage());
+        }
+    }
+
+    /**
+     * 保存地址信息
+     * @return [type] [description]
+     */
+    public function SaveAddress(){
+    	try{
+			$params = \PhalApi\DI()->request->getAll();
+			unset($params['s']);
+			$params['created_at'] = date("Y-m-d H:i:s");
+	        $res = $this->AddressModel->insert($params);
 	        return array('res' => $res, 'msg' => "");
         } catch (\Exception $e) {
         	return array('res' => $e->getCode() , 'msg' => $e->getMessage());
