@@ -58,8 +58,6 @@ class WebApi extends Api {
 
     //获取jsapi_ticket
 	public function getJsapi(){
-		$access = getAccess();
-		$res = json_decode($access);
         $accessToken = $this->getTokenapi();
         return $accessToken;
 		$url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=$accessToken";
