@@ -49,9 +49,8 @@ return array(
      * 公众号相关配置
      */
     'weixin' => array(
-        'appid' => 'wx1281edc7f8a1c444',//公众号appid
-        'secret' => 'a0d64dab5247563add97a930c81eb985',//公众号secret
-        'examtemplant' => 'Kkr9jMNpRyoQ4C3HKbdC6LJyM862Rw1srVBPptnA6_s', // 考试模板消息 
+        'appid' => 'wx94ec8a32fa6de6f1',//公众号appid
+        'secret' => '0fc43783297c59d1a0f59fd96c02f18e',//公众号secret
     ),
     /**
      * 小程序相关配置
