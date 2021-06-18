@@ -59,14 +59,14 @@ class WebApi extends Api {
     //获取jsapi_ticket
 	public function getJsapi(){
         $accessToken = $this->getTokenapi();
-        return $accessToken;
-		$url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=$accessToken";
-		$result = get($url);
+        $url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=".$accessToken['access_token'];
+        return $url;
+		$result = $this->http_get_data($url);
 		//生成文件，保存token
 		$dir = __DIR__; //真实路径，crontab命令的php执行在cli模式下，不能正确识别相对路径，所以使用__DIR__
 		$filename = $dir."/jsapi_ticket.php";
         create_file($filename, $result);
-        return $accessToken;
+        return $filename;
     }
 
     /**
