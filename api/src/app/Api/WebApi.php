@@ -12,6 +12,7 @@ class WebApi extends Api {
         $this->QuestionModel = new \App\Model\Web\Question();
         $this->AddressModel = new \App\Model\Web\Address();
         $this->TicketModel = new \App\Model\Web\Ticket();
+        $this->CityModel = new \App\Model\Web\City();
     }
 
     /**
@@ -128,6 +129,20 @@ class WebApi extends Api {
         $res = curl_exec($curl);
         curl_close($curl);
         return $res;
+    }
+
+    public function getcity(){
+        $res = $this->CityModel->groupall();
+        $array = array();
+        foreach ($res as $key => $value) {
+            $info = $this->CityModel->getall($value['province_code']);
+            $array_d = array(
+                "province_code" => $value['province_code'],
+                "city" => $info
+            );
+            $array[] =  $array_d;
+        }
+        return $array;
     }
 
 } 
